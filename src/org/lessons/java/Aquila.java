@@ -1,6 +1,13 @@
 package org.lessons.java;
 
-public class Aquila extends Animale{
+import org.lessons.java.interfaces.IVolante;
+
+public class Aquila extends Animale implements IVolante{
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!!!");
+    }
 
     @Override
     public void mangia() {
